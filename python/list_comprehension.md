@@ -20,3 +20,11 @@ for i in range(len(example_list)):
 print(new_list) # [1, 2, 3]
 
 ```
+
+
+```python
+input2 = ['-8 7 6','-5 0 -1','3 6 -9']
+
+test = [[int(x) for x in input2[i].split()] for i in range(n)]
+print(test) # [[-8, 7, 6], [-5, 0, -1], [3, 6, -9]]
+```
