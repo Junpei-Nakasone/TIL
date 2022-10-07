@@ -17,3 +17,10 @@ You can look for all files in the specified directory and all of its subdirector
 ```bash
 grep -R 'word' .
 ```
+
+
+You can look for all files those end with specified word by using `-e` option.
+Below statement displays files end with d.
+```
+grep -e d$
+```
