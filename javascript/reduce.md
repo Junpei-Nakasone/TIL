@@ -7,6 +7,15 @@
 ## Syntax
 `array.reduce(function(total, currentValue), initialValue)`
 
-|parameter|Description|
+|Parameter|Description|
 ---|---
-|function()|A function which runs for each element in the array. Required.|
+|Reducer function()|A function which runs for each element in the array. Required.|
+
+Reducer function parameters:
+
+|Parameter|Description|
+---|---
+|total|The initial Value or previously returned value of the reducer function. Required.|
+|current value|The value of current element. Required.|
+|current index|The index of the current element. Optional.|
+|arr|The array the current element belongs to. Optional.|
