@@ -27,3 +27,16 @@ cat ~/.gitconfig
 [user]
          email = test.email.com
 ```
+
+
+### core.commentChar
+
+By default, git recognizes `#` character as comment line.
+But, when you want to specify issue number for a commit you need to use `#` before that commit message.
+In that case, `commentChar` in the .gitconfig need to be changed.
+You can set commentChar in the .gitconfig like below. For instance, below example set `>` as the commentChar.
+
+```bash
+[core]
+    commentChar = >
+```
