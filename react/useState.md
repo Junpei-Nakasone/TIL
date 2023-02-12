@@ -29,3 +29,36 @@ function Example() {
   );
 }
 ```
+
+### Define the type of return value of useState
+To define the type of return value of useState, you can use `useState<type>(initial value)` statement.
+
+Example(React):
+```js
+type Example = {
+  id: number,
+  name: string,
+}
+
+const [data, setData] = useState<Example[]>([])
+
+useEffect(() => {
+  axios.get('https://example.api')
+  .then(res => {
+    setData(res.data)
+  })
+}, [])
+
+return (
+  <div>
+    <ul>
+      {
+        data.map(element =>
+        <li>
+          <element.name>
+        </li>)
+      }
+    </ul>
+  </div>
+)
+```
