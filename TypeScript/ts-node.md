@@ -1,3 +1,6 @@
+# What is ts-node
+`ts-node` is executing engine for TypeScript to run Node.js.
+
 When you want to debug typescript code, you need to specify `ts-node/register` in launch.json.
 
 launch.json example are below.
